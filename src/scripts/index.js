@@ -2,7 +2,7 @@
 // import '../../node_modules/bootstrap/js/dist/collapse';
 // import '../../node_modules/bootstrap/js/dist/tab';
 
-// import Collapse from '../../node_modules/bootstrap/js/dist/collapse';
+import Collapse from '../../node_modules/bootstrap/js/dist/collapse';
 import Scrollspy from '../../node_modules/bootstrap/js/dist/scrollspy';
 
 import Swiper, { FreeMode, Mousewheel } from 'swiper';
@@ -17,6 +17,13 @@ const swiper = new Swiper('.swiper', {
     FreeMode: true,
 });
 
+//BURGER
+
+const navbarToggler = document.querySelector('.navbar-toggler')
+
+    navbarToggler.addEventListener("click", function() {
+        navbarToggler.classList.toggle('active');
+    });
 
   
 

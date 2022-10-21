@@ -34,7 +34,7 @@
 // @import "../../node_modules/bootstrap/scss/forms/validation";
 
 // @import "../../node_modules/bootstrap/scss/buttons";
-// @import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/transitions";
 @import "../../node_modules/bootstrap/scss/nav";
 // @import "../../node_modules/bootstrap/scss/navbar";
 @import "../../node_modules/bootstrap/scss/card";
@@ -68,7 +68,6 @@
 @import "../../node_modules/swiper/swiper.scss";
 @import 'fonts';
 @import "footer";
-@import "header";
 @import "navigation.scss";
 @import "customTypo.scss";
 @import "banner";
@@ -76,6 +75,8 @@
 @import "bannerBottom";
 @import "map";
 @import "contacts";
+@import "header";
+@import "customBurger";
 
 
 

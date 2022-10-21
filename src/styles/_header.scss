@@ -1,37 +1,108 @@
-header{
+header {
     background-color: #403C3B;
     font-family: 'Mulish', sans-serif;
     font-weight: normal;
     color: #fff;
 }
-.logo{
+
+.logo {
     font-family: 'Gilroy', sans-serif;
     font-weight: bold;
     font-size: 1.5625rem;
-    color: #fff;
+    color: #fff; 
 }
-.header{  
-   
-    &__phone-icon{
+
+.header {
+    &__phone-icon {
         background-color: #618967;
         border-radius: 50%;
     }
-    &__number{
-        p{
+
+    &__number {
+        p {
             font-weight: 300;
             font-size: 0.9rem;
         }
-        strong{
+
+        strong {
             font-weight: bold;
             font-size: 1rem;
         }
     }
-    &__basket{
-        background-color: #618967;
-        border-radius: 10px;
-    }
+
 }
-.form-control-dark{
+
+.form-control-dark {
     background-color: #403C3B;
     border-color: #504B4A;
 }
+
+.basket {
+    display: block;
+    background-color: #618967;
+    border-radius: 10px;
+    background-color: #618967;
+    border-radius: 50%;
+}
+.basket-mobile, .navbar-toggler{
+    display: none;
+}
+.collapse{
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .mobile-header{
+        width: 100%;
+    }
+    .collapse{
+        width: fit-content;
+    }
+    .basket{
+        display: none;
+    }
+    .basket-mobile, .navbar-toggler{
+        display: block;
+    }
+    .navbar-toggler{
+        z-index: 5;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+        &::before, &::after, span {
+            position: absolute;
+            left: 0;
+            height: 10%;
+            width: 100%;
+            transition: all 0.3s;
+            background-color: #618967;
+        }
+        &::before, &::after{
+            content: "";
+        }
+        &::before{
+            top: 0;
+        }
+        &::after{
+            bottom: 0;
+        }
+        span{
+            top: 50%;
+            transform: scale(1) translateY(-50%);
+        }
+    }
+    .active{
+        span{
+            transform: scale(0) translateY(-50%);
+        }
+        &::before{
+            top: (50%);
+            transform: rotate(-225deg) translateY(calc(-50% + 1px));
+        }
+        &::after{
+            top: (50%);
+            transform: rotate(225deg) translateY(calc(-50% + 1px));
+        }
+    }
+ }
