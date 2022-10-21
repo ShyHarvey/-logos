@@ -1,0 +1,37 @@
+header{
+    background-color: #403C3B;
+    font-family: 'Mulish', sans-serif;
+    font-weight: normal;
+    color: #fff;
+}
+.logo{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+    font-size: 1.5625rem;
+    color: #fff;
+}
+.header{  
+   
+    &__phone-icon{
+        background-color: #618967;
+        border-radius: 50%;
+    }
+    &__number{
+        p{
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+        strong{
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    }
+    &__basket{
+        background-color: #618967;
+        border-radius: 10px;
+    }
+}
+.form-control-dark{
+    background-color: #403C3B;
+    border-color: #504B4A;
+}

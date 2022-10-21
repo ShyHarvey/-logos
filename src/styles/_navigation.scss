@@ -1,0 +1,27 @@
+.navigation{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: rgba(64, 60, 59, 1);
+    &__menu{
+        width: fit-content;
+        margin: 0 auto;
+        a{
+            color:#fff;
+            font-weight: 300;
+            &:hover{
+                color: #72A479;
+            }
+        }
+        .active{
+            color:#fff;
+            border-bottom: #618967 solid 2px;
+            font-weight: bold;
+            pointer-events: none;
+            cursor: default;
+        }
+    }
+}
+.nav-item{
+    list-style-type: none;
+}

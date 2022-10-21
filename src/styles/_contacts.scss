@@ -1,0 +1,16 @@
+.contacts{
+    position: absolute;
+    z-index: 2;
+    background-color: #2E2B2C;
+    border-radius: 15px;
+    &__title, &__adresses{
+        border-bottom: solid 1px;
+        border-image: linear-gradient(90deg,rgba(255,255,255,0), rgba(255,255,255,0.15), rgba(255,255,255,0)) 1;
+    }
+    &__btn{
+        border-radius: 10px;
+    }
+}
+.phone-number{
+    font-size: 1.4rem;
+}
